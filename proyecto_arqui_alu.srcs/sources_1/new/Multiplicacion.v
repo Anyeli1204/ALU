@@ -121,23 +121,13 @@ function [4:0] first_one_local;
   wire       sticky_bit = |N[7:0];
 
   // Redondeo a lazos (RNE ties-to-even)
-  wire [9:0] mant_rne;
-  wire signed [6:0] exp_rne;
+  // Variable eliminada
+  // Variable eliminada
   wire       inexact_rne; // si quieres, �salo luego como flag
 
-  rne10 u_rne (
-    .mant_in (mant_pre),
-    .guard   (guard_bit),
-    .round   (round_bit),
-    .sticky  (sticky_bit),
-    .exp_in  (exp_pre),
-    .mant_out(mant_rne),
-    .exp_out (exp_rne),
-    .inexact (inexact_rne)
-  );
-
-  assign Fm     = mant_rne;
-  assign ExpOut = exp_rne;
+  // Sin redondeo - usar directamente los valores pre-redondeo
+  assign Fm     = mant_pre;
+  assign ExpOut = exp_pre;
 
 endmodule
 

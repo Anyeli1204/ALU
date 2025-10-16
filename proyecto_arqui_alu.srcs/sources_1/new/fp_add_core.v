@@ -255,25 +255,20 @@ module Suma16Bits (
     end
   end
 
-  // RNE ties-to-even
-  wire [9:0] mant_rne;
-  wire signed [6:0] exp_rne;
-  wire       inexact_rne; // disponible si luego expones flags
+  // Sin redondeo - variables finales
 
-  rne10 u_rne (
-    .mant_in (mant_pre),
-    .guard   (guard_bit),
-    .round   (round_bit),
-    .sticky  (sticky_bit),
-    .exp_in  (eN),
-    .mant_out(mant_rne),
-    .exp_out (exp_rne),
-    .inexact (inexact_rne)
-  );
+  // Sin redondeo - usar directamente los valores pre-redondeo
+  wire [9:0] mant_final = mant_pre;
+  wire signed [6:0] exp_final = eN;
 
   // Empaquetado HALF (sin casos especiales aqu�)
-  wire is_zero = (mant_rne == 10'b0) && (exp_rne <= 7'sd0);
-  assign F = is_zero ? {s_res, 15'b0} : { s_res, exp_rne[4:0], mant_rne };
+  wire is_zero = (mant_final == 10'b0) && (exp_final <= 7'sd0);
+  
+  // Empaquetado: usar exponente de 5 bits, saturando en 0 si es negativo
+  wire [4:0] exp_pack = (exp_final <= 7'sd0) ? 5'd0 : 
+                       (exp_final >= 7'sd31) ? 5'd31 : exp_final[4:0];
+  
+  assign F = is_zero ? {s_res, 15'b0} : {s_res, exp_pack, mant_final};
 
 endmodule
 

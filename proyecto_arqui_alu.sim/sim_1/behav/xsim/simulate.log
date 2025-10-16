@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+ADD 3c00 + 4000 -> 0000 (valid=0)
+ERROR              ADD: got=0000 exp=4200
+Fatal: Mismatch
+Time: 65 ns  Iteration: 0  Process: /fp_alu_tb/check16  Scope: fp_alu_tb.check16  File: C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_alu_top.v Line: 39
+$finish called at time : 65 ns
