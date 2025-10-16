@@ -1,0 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/Division.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Division
+INFO: [VRFC 10-311] analyzing module DivHP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/Multiplicacion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullSub
+INFO: [VRFC 10-311] analyzing module RestaExp
+WARNING: [VRFC 10-8332] begin/end is required for generate-for in this mode of Verilog [C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/Multiplicacion.v:46]
+INFO: [VRFC 10-311] analyzing module restar_1_bit_expo
+INFO: [VRFC 10-311] analyzing module right_shift_pf
+INFO: [VRFC 10-311] analyzing module Prod
+INFO: [VRFC 10-311] analyzing module ProductHP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_add_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FullAdder
+INFO: [VRFC 10-311] analyzing module SumarExp
+INFO: [VRFC 10-311] analyzing module mas_1_bit_expo
+INFO: [VRFC 10-311] analyzing module RestaMantisa
+INFO: [VRFC 10-311] analyzing module SumMantisa
+INFO: [VRFC 10-311] analyzing module Suma16Bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_add_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_add_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_div_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_div_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_mul_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_mul_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_sub_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_sub_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/rne10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rne10
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Usuario/Desktop/Ciclo 2025 - 2/proyecto_arqui_alu/proyecto_arqui_alu.srcs/sources_1/new/fp_alu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fp_alu_tb

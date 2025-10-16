@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/Division.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/Multiplicacion.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/fp_add_core.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/fp_add_wrapper.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/fp_alu.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/fp_div_wrapper.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/fp_mul_wrapper.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/fp_sub_wrapper.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/rne10.v" \
+"../../../../proyecto_arqui_alu.srcs/sources_1/new/fp_alu_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
